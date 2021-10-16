@@ -1,0 +1,7 @@
+<h3>Serviços</h3>
+
+<div *ngFor="let item of todoListService.items">
+  {{item}}
+</div>
+<br><br>
+<input #ipt placeholder="Add serviço"><button (click)="todoListService.add(ipt.value)">+</button>
